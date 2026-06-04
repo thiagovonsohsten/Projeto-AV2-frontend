@@ -1,0 +1,12 @@
+#pagina-inicial .history-scroll {
+  border-left: 4px solid #0ea5e9;
+}
+
+#pagina-inicial h2.titulo-servicos {
+  text-align: center;
+}
+
+.portal-atalhos {
+  text-align: center;
+  margin-top: 2rem;
+}

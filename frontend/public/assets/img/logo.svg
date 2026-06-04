@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="48" viewBox="0 0 120 48" role="img" aria-label="Logo TechServ">
+  <rect width="120" height="48" rx="8" fill="#0f172a"/>
+  <path d="M12 14h8v20h-8V14zm4-6v4h16V8H16zm8 12h8v14h-8V20zm12-6h20v4H36v-4zm0 8h16v4H36v-4zm0 8h12v4H36v-4z" fill="#38bdf8"/>
+  <text x="58" y="30" font-family="Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#f8fafc">TechServ</text>
+</svg>

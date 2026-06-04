@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechServ Soluções | Outsourcing, projetos e suporte em TI</title>
+    <link rel="icon" href="assets/img/logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <!-- Estilos locais moderados: complementam o arquivo externo (cascata). -->
+    <style>
+      /* Sobrescrita: borda do bloco com rolagem mais destacada nesta página */
+      #pagina-inicial .history-scroll {
+        border-left: 4px solid #0ea5e9;
+      }
+      /* Acumulação: reforça alinhamento do título da seção de serviços */
+      #pagina-inicial h2.titulo-servicos {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body id="pagina-inicial">
+    <!-- Layout em tabela: organiza header, main e footer em linhas consistentes -->
+    <table class="layout-tabela-principal" style="width: 100%; border-collapse: collapse">
+      <tr>
+        <td style="padding: 0; vertical-align: top">
+          <header class="site-header">
+            <div class="logo-wrap">
+              <img src="assets/img/logo.svg" alt="Logo TechServ Soluções" width="120" height="48" />
+              <div>
+                <h1 class="titulo-marca-header">TechServ Soluções</h1>
+                <p class="tagline">
+                  Outsourcing de TI, projetos e suporte para empresas que precisam de <em>estabilidade, segurança e
+                  previsibilidade de custos</em>.
+                </p>
+              </div>
+            </div>
+            <nav class="nav-principal" aria-label="Principal">
+              <a href="login.html">Área do cliente</a>
+              <a href="cadastro.html">Cadastro</a>
+              <a id="link-solicitacao" class="nav-link--hidden" href="solicitacao-servicos.html"
+                >Solicitações de serviço</a
+              >
+            </nav>
+          </header>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding: 0; vertical-align: top">
+          <main class="conteudo-pagina">
+            <section aria-labelledby="historia-titulo">
+              <h2 id="historia-titulo">Nossa história</h2>
+              <div class="history-scroll">
+                <p>
+                  A <strong>TechServ Soluções</strong> foi fundada em 2012 em Recife, com foco em
+                  <strong>outsourcing de TI</strong> e projetos sob medida para PMEs dos setores de serviços, varejo e
+                  indústria leve. Começamos com suporte presencial e remoto e evoluímos para contratos com SLA,
+                  central de atendimento e entregas em nuvem (Microsoft 365, backup e infraestrutura híbrida).
+                </p>
+                <p>
+                  Hoje mantemos equipe própria de campo e NOC, parcerias com fabricantes e integradores, e processos
+                  inspirados em <em>ITIL</em> e boas práticas de segurança. Tratamos dados pessoais com base legal,
+                  minimização e rastreabilidade, em linha com a <strong>LGPD</strong>.
+                </p>
+                <p>
+                  Cada contrato passa por diagnóstico, proposta com escopo e investimento detalhados e plano de
+                  transição. Clientes cadastrados acessam o <strong>portal</strong> para abrir solicitações e
+                  acompanhar serviços; demais contatos ficam no rodapé desta página.
+                </p>
+              </div>
+            </section>
+
+            <section aria-labelledby="video-titulo">
+              <h2 id="video-titulo">Vídeo institucional</h2>
+              <p>
+                Trecho em <em>streaming</em> (YouTube, cerca de <strong>1 minuto</strong>) sobre
+                <strong>infraestrutura crítica e operações em data center</strong> — contexto alinhado às frentes de
+                projeto, continuidade e segurança que a TechServ oferece aos clientes.
+              </p>
+              <div
+                class="video-wrap video-wrap--facade"
+                id="youtube-embed-wrap"
+                data-youtube-id="jQx6wItPuSo"
+              >
+                <button type="button" class="video-facade-btn" id="btn-carregar-youtube" aria-label="Carregar vídeo do YouTube incorporado">
+                  <!-- Miniatura oficial do vídeo (hqdefault costuma existir; maxres pode falhar em alguns vídeos) -->
+                  <img
+                    class="video-facade-thumb"
+                    src="https://img.youtube.com/vi/jQx6wItPuSo/hqdefault.jpg"
+                    alt="Capa do vídeo institucional no YouTube"
+                    width="480"
+                    height="360"
+                  />
+                  <span class="video-facade-play" aria-hidden="true">
+                    <span class="video-facade-play-icon">▶</span>
+                    <span class="video-facade-play-text">Assistir aqui</span>
+                  </span>
+                </button>
+              </div>
+              <p class="video-ajuda">
+                <small>
+                  <strong>Dica:</strong> ao abrir o site como arquivo no computador (<code>file://</code>), o YouTube
+                  às vezes mostra “Erro 153”. Use a extensão
+                  <strong>Live Server</strong> no VS Code/Cursor (endereço <code>http://localhost</code>) ou clique na
+                  capa para tentar carregar o player. Alternativa:
+                  <a href="https://www.youtube.com/watch?v=jQx6wItPuSo" target="_blank" rel="noopener noreferrer"
+                    >abrir no YouTube</a
+                  >.
+                </small>
+              </p>
+            </section>
+
+            <section aria-labelledby="galeria-titulo">
+              <h2 id="galeria-titulo">Estrutura e operação</h2>
+              <div class="galeria-grid">
+                <figure>
+                  <img
+                    src="assets/img/galeria-1.png"
+                    alt="Sala de operações de rede com painéis de monitoramento"
+                    width="400"
+                    height="240"
+                  />
+                  <figcaption>
+                    Centro de operações (NOC): monitoração de links, serviços críticos e filas de incidente em contratos
+                    com disponibilidade estendida.
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img
+                    src="assets/img/galeria-2.png"
+                    alt="Equipe técnica em atendimento a cliente"
+                    width="400"
+                    height="240"
+                  />
+                  <figcaption>
+                    Service desk e equipe de campo integrados: padronização de estações, visitas programadas e
+                    registro em ferramenta de chamados.
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img src="assets/img/galeria-3.png" alt="Sala de reuniões corporativa" width="400" height="240" />
+                  <figcaption>
+                    Salas de reunião para kickoff de projetos, comitês de mudança e alinhamento de indicadores com
+                    patrocinadores do cliente.
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img
+                    src="assets/img/galeria-4.png"
+                    alt="Ambiente de servidores e equipamentos de rede"
+                    width="400"
+                    height="240"
+                  />
+                  <figcaption>
+                    Laboratório e staging para testes antes de produção: validação de imagens, patches e alterações de
+                    configuração.
+                  </figcaption>
+                </figure>
+              </div>
+            </section>
+
+            <section class="secao-servicos" aria-labelledby="servicos-titulo">
+              <h2 id="servicos-titulo" class="titulo-servicos">Serviços</h2>
+              <p class="servicos-lead">
+                Ofertas com <strong>escopo fechado ou contrato mensal</strong>, sempre com documentação de entrega,
+                responsáveis definidos e canais formais de comunicação. Atendemos desde a operação do dia a dia até
+                projetos de modernização e conformidade.
+              </p>
+              <div class="servicos-cards">
+                <article class="servico-item">
+                  <span class="servico-rotulo" aria-hidden="true">Service desk</span>
+                  <h3>Suporte e service desk</h3>
+                  <p class="servico-resumo">
+                    Primeiro nível com classificação de incidente e requisição, escalonamento técnico e comunicação
+                    formal ao negócio.
+                  </p>
+                  <ul class="servico-detalhes">
+                    <li>Filas por criticidade, metas de SLA e relatório mensal de volume e tempo de resolução</li>
+                    <li>Registro obrigatório em ITSM com histórico e anexos</li>
+                    <li>Base de conhecimento, procedimentos padronizados e handover entre turnos</li>
+                  </ul>
+                </article>
+                <article class="servico-item">
+                  <span class="servico-rotulo" aria-hidden="true">Infraestrutura</span>
+                  <h3>Redes e conectividade</h3>
+                  <p class="servico-resumo">
+                    Projeto, implantação e suporte evolutivo de LAN, WLAN e acesso remoto, com documentação as-built.
+                  </p>
+                  <ul class="servico-detalhes">
+                    <li>Dimensionamento de Wi-Fi corporativo, VLANs, QoS e alta disponibilidade de link</li>
+                    <li>Firewall de próxima geração, VPN site-to-site e acesso remoto com MFA</li>
+                    <li>Análise de gargalos, atualização de firmware e plano de continuidade de conectividade</li>
+                  </ul>
+                </article>
+                <article class="servico-item">
+                  <span class="servico-rotulo" aria-hidden="true">Continuidade</span>
+                  <h3>Nuvem, backup e recuperação</h3>
+                  <p class="servico-resumo">
+                    Proteção de dados e cargas de trabalho em ambiente híbrido, com comprovação periódica de restore.
+                  </p>
+                  <ul class="servico-detalhes">
+                    <li>Migração e operação em nuvem pública (IaaS/SaaS) com governança de custos</li>
+                    <li>Política 3-2-1, retenção por política interna e testes de restauração documentados</li>
+                    <li>Conciliação de licenças, capacidade e renovações com visão de TCO anual</li>
+                  </ul>
+                </article>
+                <article class="servico-item">
+                  <span class="servico-rotulo" aria-hidden="true">Governança</span>
+                  <h3>Segurança da informação e LGPD</h3>
+                  <p class="servico-resumo">
+                    Controles técnicos e organizacionais para reduzir risco operacional e apoiar adequação à privacidade.
+                  </p>
+                  <ul class="servico-detalhes">
+                    <li>Baseline de hardening em estações Windows/Linux, servidores e perimetros</li>
+                    <li>Antispam, MFA, gestão de privilégios e revisão periódica de contas</li>
+                    <li>Suporte a auditorias, inventário de tratamentos e contratos com suboperadores</li>
+                  </ul>
+                </article>
+              </div>
+            </section>
+
+            <section aria-labelledby="fundadores-titulo">
+              <h2 id="fundadores-titulo">Direção e fundadores</h2>
+              <div class="tabela-wrapper">
+                <table class="tabela-dados tabela-fundadores">
+                  <thead>
+                    <tr>
+                      <th scope="col">Foto</th>
+                      <th scope="col">Cargo</th>
+                      <th scope="col">Nome</th>
+                      <th scope="col">Breve CV</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="fundador-foto">
+                        <img
+                          src="assets/img/Fundador%20(1).png"
+                          width="120"
+                          height="120"
+                          alt="Retrato de Ana Paula Mendes, diretora de operações, em ambiente de NOC"
+                        />
+                      </td>
+                      <td>Diretora de Operações</td>
+                      <td>Ana Paula Mendes</td>
+                      <td>
+                        Mais de 15 anos liderando operações de infraestrutura e telecom; ITIL Foundation, CCNA; ex-coordenadora
+                        de NOC em operadora nacional; responsável por SLAs e continuidade na TechServ desde 2014.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fundador-foto">
+                        <img
+                          src="assets/img/Fundador%20(2).png"
+                          width="120"
+                          height="120"
+                          alt="Retrato de Ricardo Lopes, diretor comercial e projetos, com tablet de gestão de projetos"
+                        />
+                      </td>
+                      <td>Diretor Comercial e Projetos</td>
+                      <td>Ricardo Lopes</td>
+                      <td>
+                        MBA em gestão; histórico em implantação de ERP, Microsoft 365 e integrações em PMEs; condução de
+                        escopo, cronograma e comitês de mudança; interface comercial e de entrega de projetos na TechServ.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fundador-foto">
+                        <img
+                          src="assets/img/Fundador%20(3).png"
+                          width="120"
+                          height="120"
+                          alt="Retrato de Felipe A. Nogueira, diretor de segurança, em sala de servidores"
+                        />
+                      </td>
+                      <td>Diretor de Segurança</td>
+                      <td>Felipe A. Nogueira</td>
+                      <td>
+                        Especialização em hardening e resposta a incidentes; experiência em SOC e treinamento de equipes;
+                        define políticas de segurança, revisão de acessos e apoio à conformidade (LGPD) na TechServ.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </main>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding: 0; vertical-align: top">
+          <footer class="site-footer">
+            <h2 style="font-size: 1rem; margin: 0 0 0.5rem">Fale conosco</h2>
+            <ul>
+              <li>Telefone fixo (comercial e SAC): <a href="tel:+551135672000">(11) 3567-2000</a> — seg. a sex., 8h30–18h</li>
+              <li>WhatsApp corporativo: <a href="https://wa.me/5511998877665" rel="noopener noreferrer">(11) 99887-7665</a></li>
+              <li>
+                E-mail:
+                <a href="mailto:contato@techservsolucoes.com.br?subject=Contato%20TechServ">contato@techservsolucoes.com.br</a>
+                (propostas, contratos e suporte administrativo)
+              </li>
+            </ul>
+            <p>
+              <strong>Endereço sede:</strong> Av. Boa Viagem, 1520 — Sala 704 — Boa Viagem, Recife/PE
+              — CEP 51011-000
+            </p>
+            <p style="margin-bottom: 0.35rem"><strong>Meios de pagamento aceitos</strong></p>
+            <div class="pagamentos">
+              <img src="assets/img/pag-pix.png" alt="Pagamento via Pix" width="80" height="36" />
+              <img src="assets/img/pag-cartao.png" alt="Cartões de crédito e débito" width="80" height="36" />
+              <img src="assets/img/pag-boleto.png" alt="Boleto bancário" width="80" height="36" />
+            </div>
+          </footer>
+        </td>
+      </tr>
+    </table>
+
+    <script src="js/auth-sim.js"></script>
+    <script src="js/index-page.js"></script>
+  </body>
+</html>

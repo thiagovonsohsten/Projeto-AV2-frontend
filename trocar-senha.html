@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redefinição de senha — TechServ Soluções</title>
+    <link rel="icon" href="assets/img/logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo-wrap">
+        <a href="index.html"
+          ><img src="assets/img/logo.svg" alt="Logo TechServ Soluções" width="120" height="48"
+        /></a>
+      </div>
+    </header>
+
+    <main class="conteudo-pagina">
+      <h1>Troca de senha de clientes</h1>
+      <div class="form-card">
+        <p>
+          Utilize o mesmo e-mail cadastrado como login. Após a validação, você retornará à tela anterior. Esta versão do
+          portal simula a troca; em produção, o link seria enviado por e-mail ou SMS.
+        </p>
+        <form id="form-troca" action="#" method="get">
+          <label for="t-login">Login (e-mail)</label>
+          <input type="text" id="t-login" name="login" inputmode="email" autocomplete="username" />
+
+          <label for="t-senha">Nova senha</label>
+          <input type="password" id="t-senha" name="senha" autocomplete="new-password" />
+
+          <label for="t-conf">Confirmação da senha</label>
+          <input type="password" id="t-conf" name="conf" autocomplete="new-password" />
+
+          <div class="instrucoes-senha" id="texto-regras" aria-live="polite">
+            <strong>Política de senha (portal):</strong> mínimo de 6 caracteres; ao menos um algarismo; ao menos uma letra
+            maiúscula; ao menos um caractere especial da lista de <strong>permitidos</strong>:
+            <span id="chars-ok"></span>. <strong>Não utilize</strong> os caracteres proibidos:
+            <span id="chars-nao"></span>.
+          </div>
+
+          <p id="msg-troca" class="msg-form" role="status"></p>
+
+          <div class="botoes-linha">
+            <button type="button" id="btn-troca" class="btn btn-primario">Troca Senha</button>
+            <button type="button" id="btn-limpar-troca" class="btn btn-secundario">Limpar</button>
+          </div>
+        </form>
+        <p><a href="login.html">← Voltar ao login</a></p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p style="margin: 0"><small>TechServ Soluções — segurança e privacidade de credenciais</small></p>
+    </footer>
+
+    <script src="js/validacoes-login.js"></script>
+    <script src="js/validacoes-senha.js"></script>
+    <script src="js/trocar-senha-page.js"></script>
+  </body>
+</html>

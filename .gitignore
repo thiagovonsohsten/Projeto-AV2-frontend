@@ -1,0 +1,9 @@
+# SO / editor
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.swp
+*.swo
+
+# Cursor / IDE (opcional — remova a linha abaixo se quiser versionar config local)
+.cursor/

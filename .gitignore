@@ -5,5 +5,12 @@ Desktop.ini
 *.swp
 *.swo
 
-# Cursor / IDE (opcional — remova a linha abaixo se quiser versionar config local)
+# Cursor / IDE
 .cursor/
+
+# Node
+node_modules/
+dist/
+
+# Banco local
+backend/data/
